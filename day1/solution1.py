@@ -40,8 +40,7 @@ for line in f:
     if calorieCounter > maxCalories:
       maxCalories = calorieCounter
       indexOfMaxCalories = currIndex
-
-
+      
     calorieCounter = 0
   else:
     #Non empty line, add to the counter and continue
