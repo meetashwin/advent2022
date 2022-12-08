@@ -25,6 +25,10 @@ def find_max_calories(filename, topnum):
   #Find the top n based on parameter
   topCalories = 0
 
+  if topnum >= len(maxCaloriesList):
+    print("Not enough elements to find the sum")
+    return -1
+
   for i in range(topnum):
     topCalories += maxCaloriesList[i]
 
