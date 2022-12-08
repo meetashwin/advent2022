@@ -10,9 +10,8 @@ def find_max_calories(filename, topnum):
 
   for line in f:
     if len(line.strip()) == 0 :
-      #Encountered an empty line - add calories of elf to the list
+      #Encountered an empty line - add calories of elf to the list and reset the counter
       maxCaloriesList.append(calorieCounter)
-
       calorieCounter = 0
     else:
       #Non empty line, add to the counter and continue
